@@ -12,6 +12,7 @@ gem install google-map-stitch
 
 ### Define a section of map and zoom level
 ```ruby
+require 'google-map-stitch'
 
 # entire map
 engine = GMS::Engine.new({:zoomLevel=>2})

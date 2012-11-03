@@ -1,4 +1,4 @@
-require File.expand_path('../lib/gms/version', __FILE__)
+require File.expand_path('../lib/google-map-stitch/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = 'google-map-stitch'
