@@ -47,7 +47,7 @@ class GMS
 
     # total height in pixels
     def pixelHeight
-      width*256
+      height*256
     end
 
     # total width printed @ 300 dpi (in inches)
@@ -85,8 +85,8 @@ class GMS
 
     # list all tiles
     def tiles
-      @startY.upto(@endY).map.with_index do |x, c|
-        @startX.upto(@endX).map.with_index do |y, r|
+      @startY.upto(@endY).map.with_index do |y, c|
+        @startX.upto(@endX).map.with_index do |x, r|
           {
             :url => imageURL(x,y,@zoomLevel,@layer),
             :dir => "r#{"%06d" % r}",

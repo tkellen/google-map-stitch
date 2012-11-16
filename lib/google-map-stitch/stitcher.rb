@@ -27,9 +27,9 @@ class GMS
           puts "Combining #{file}"
           column.push(Magick::Image.read(file).first)
         end
-        output.push(column.append(false))
+        output.push(column.append(true))
       end
-      output.append(true).write(@output_file)
+      output.append(false).write(@output_file)
     end
   end
 end
