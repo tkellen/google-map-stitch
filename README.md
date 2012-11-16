@@ -19,12 +19,22 @@ engine = GMS::Engine.new({:zoomLevel=>2})
 
 # subsection (South America)
 engine = GMS::Engine.new({
-  :startX => 131,
-  :endX => 201,
-  :startY => 235,
-  :endY => 360,
-  :zoomLevel => 10
+  :startX => 16,
+  :endX => 27,
+  :startY => 29,
+  :endY => 45,
+  :zoomLevel => 6
 })
+
+# subsection (Mexico)
+engine = GMS::Engine.new({
+  :startX => 10,
+  :endX => 19,
+  :startY => 25,
+  :endY => 31,
+  :zoomLevel => 6
+})
+
 ```
 
 ### Download Tiles
