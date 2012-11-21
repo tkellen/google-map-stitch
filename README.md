@@ -19,11 +19,11 @@ engine = GMS::Engine.new({:zoomLevel=>2})
 
 # subsection (South America)
 engine = GMS::Engine.new({
-  :startX => 16,
-  :endX => 27,
-  :startY => 29,
-  :endY => 45,
-  :zoomLevel => 6
+  :startX => 130,
+  :endX => 214,
+  :startY => 236,
+  :endY => 353,
+  :zoomLevel => 9
 })
 
 # subsection (Mexico)
