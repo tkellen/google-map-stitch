@@ -1,4 +1,4 @@
-require 'rmagick'
+require 'RMagick'
 
 class GMS
   class Stitcher
