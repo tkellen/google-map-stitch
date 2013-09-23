@@ -11,8 +11,8 @@ class GMS
     end
 
     def tiles
-      Dir.glob(File.join(dir,"*")).map do |path|
-        Dir.glob(File.join(path,"*.png")).map do |image|
+      Dir.glob(File.join(dir,"*")).sort.map do |path|
+        Dir.glob(File.join(path,"*.png")).sort.map do |image|
           image
         end
       end
@@ -23,7 +23,7 @@ class GMS
 
       tiles.each do |row|
         column = Magick::ImageList.new
-        row.each do |file|
+        row.sort.each do |file|
           puts "Combining #{file}"
           column.push(Magick::Image.read(file).first)
         end
